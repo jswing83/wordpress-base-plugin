@@ -1,20 +1,20 @@
 <?php
 /**
  * @wordpress-plugin
- * Plugin Name:       WordPress Base Plugin
- * Plugin URI:        https://github.com/dmhendricks/wordpress-base-plugin
+ * Plugin Name:       Jason Test Plugin
+ * Plugin URI:        
  * Description:       A boilerplate for WordPress plugins
- * Version:           0.5.4
- * Author:            Daniel M. Hendricks
- * Author URI:        https://www.danhendricks.com
+ * Version:           0.0.1
+ * Author:            Jason Swing
+ * Author URI:        
  * License:           GPL-2.0
- * License URI:       https://opensource.org/licenses/GPL-2.0
- * Text Domain:       wordpress-base-plugin
+ * License URI:       
+ * Text Domain:       jason-test-plugin
  * Domain Path:       languages
- * GitHub Plugin URI: dmhendricks/wordpress-base-plugin
+ * GitHub Plugin URI: 
  */
 
-/*	Copyright 2018	  Daniel M. Hendricks (https://www.danhendricks.com/)
+/*	Copyright 2024 Jason Swing
 
 		This program is free software; you can redistribute it and/or
     modify it under the terms of the GNU General Public License

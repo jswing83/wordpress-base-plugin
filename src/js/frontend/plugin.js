@@ -18,6 +18,6 @@
   }
 
   // Write a message to the debugger console
-  //WPBP_NS.Site.sampleFunction( 'Darlene' );
+  WPBP_NS.Site.sampleFunction( 'Darlene' );
 
 })( window.jQuery );

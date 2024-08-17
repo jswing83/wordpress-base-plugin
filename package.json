@@ -1,12 +1,12 @@
 {
-  "name": "wordpress-base-plugin",
-  "author": "Daniel M. Hendricks",
+  "name": "wordpress-test-plugin",
+  "author": "Jason Swing",
   "license": "GPL-2.0-or-later",
   "private": true,
   "config": {
-    "plugin_name": "WordPress Base Plugin",
-    "plugin_short_name": "Base Plugin",
-    "username": "dmhendricks",
+    "plugin_name": "WordPress Test Plugin",
+    "plugin_short_name": "Test Plugin",
+    "username": "jswing",
     "php_namespace": "VendorName\\PluginName",
     "prefix": "wpbp"
   },

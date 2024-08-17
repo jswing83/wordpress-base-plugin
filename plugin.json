@@ -1,6 +1,6 @@
 {
   "prefix": "wpbp",
-  "short_name": "My Plugin",
+  "short_name": "Jason Plugin",
   "object_cache": {
     "group": "wordpress_base_plugin_cache",
     "expire": 86400
