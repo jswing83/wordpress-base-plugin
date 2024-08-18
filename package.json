@@ -23,7 +23,7 @@
     "gulp-concat": "^2.6.1",
     "gulp-filter": "^5.1.0",
     "gulp-line-ending-corrector": "^1.0.3",
-    "gulp-merge-media-queries": "^0.2.1",
+    "gulp-merge-media-queries": "github:emilushi/gulp-merge-media-queries",
     "gulp-notify": "^3.1.0",
     "gulp-plumber": "^1.2",
     "gulp-rename": "^1.4.0",
