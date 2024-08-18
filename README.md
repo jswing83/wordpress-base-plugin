@@ -1,11 +1,3 @@
-[![Author](https://img.shields.io/badge/author-Daniel%20M.%20Hendricks-lightgrey.svg?colorB=9900cc&style=flat-square)](https://www.danhendricks.com/?utm_source=github.com&utm_medium=campaign&utm_content=button&utm_campaign=wordpress-base-plugin)
-[![Latest Version](https://img.shields.io/github/release/dmhendricks/wordpress-base-plugin.svg?style=flat-square)](https://github.com/dmhendricks/wordpress-base-plugin/releases)
-[![GitHub License](https://img.shields.io/badge/license-GPLv2-yellow.svg?style=flat-square)](https://raw.githubusercontent.com/dmhendricks/wordpress-base-plugin/master/LICENSE)
-[![Flywheel](https://img.shields.io/badge/hosting-Flywheel-green.svg?style=flat-square&label=get%20hosted&colorB=AE2A21)](https://share.getf.ly/e25g6k?utm_source=github.com&utm_medium=campaign&utm_content=button&utm_campaign=dmhendricks%2Fwordpress-base-plugin)
-[![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg?style=flat-square)](https://paypal.me/danielhendricks)
-[![Analytics](https://ga-beacon.appspot.com/UA-67333102-2/dmhendricks/wordpress-base-plugin?flat)](https://github.com/igrigorik/ga-beacon/?utm_source=github.com&utm_medium=referral&utm_content=button&utm_campaign=dmhendricks%2Fwordpress-base-plugin)
-[![Twitter](https://img.shields.io/twitter/url/https/github.com/dmhendricks/wordpress-base-plugin.svg?style=social)](https://twitter.com/danielhendricks)
-
 # WordPress Base Plugin
 
 - [Documentation](https://github.com/dmhendricks/wordpress-base-plugin/wiki/)

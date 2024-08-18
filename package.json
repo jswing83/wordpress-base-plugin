@@ -6,7 +6,7 @@
   "config": {
     "plugin_name": "WordPress Test Plugin",
     "plugin_short_name": "Test Plugin",
-    "username": "jswing",
+    "username": "jswing83",
     "php_namespace": "VendorName\\PluginName",
     "prefix": "wpbp"
   },
@@ -37,7 +37,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/dmhendricks/wordpress-base-plugin.git"
+    "url": "git://github.com/jswing83/wordpress-base-plugin.git"
   },
   "dependencies": {}
 }

@@ -1,22 +1,15 @@
 {
-  "name": "dmhendricks/wordpress-base-plugin",
+  "name": "jswing83/wordpress-base-plugin",
   "type": "wordpress-plugin",
   "description": "A bloilerplate for WordPress plugins",
   "keywords": ["wordpress", "plugin", "boilerplate", "carbonfields"],
-  "homepage": "https://2lab.net",
   "license": "GPL-2.0-or-later",
   "authors": [
     {
-      "name": "Daniel M. Hendricks",
-      "homepage": "https://danhendricks.com",
+      "name": "Jason Swing",
       "role": "Developer"
     }
   ],
-  "support": {
-    "issues": "https://github.com/dmhendricks/wordpress-base-plugin/issues/",
-    "wiki": "https://github.com/dmhendricks/wordpress-base-plugin/wiki/",
-    "source": "https://github.com/dmhendricks/wordpress-base-plugin/"
-  },
   "require": {
     "php": ">=7.0",
     "jjgrainger/posttypes": "^2.0.1",
@@ -30,6 +23,11 @@
     "psr-4": {
       "VendorName\\PluginName\\": "app/",
       "Carbon_Fields\\Datastore\\Datastore\\": "app/Datastores/"
+    }
+  },
+  "config": {
+    "allow-plugins": {
+      "composer/installers": true
     }
   }
 }

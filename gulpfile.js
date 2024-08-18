@@ -62,7 +62,7 @@ var jsTasks = [
 
 /* Define strings to replace using 'gulp rename', defined in the config section of package.json */
 var renameStrings = [
-  [ 'dmhendricks\/wordpress-base-plugin', pkg.config.username + '/' + pkg.name ], // Git/Composer identifier
+  [ 'jswing83\/wordpress-base-plugin', pkg.config.username + '/' + pkg.name ], // Git/Composer identifier
   [ 'VendorName\\PluginName', pkg.config.php_namespace ], // PHP namespace for your plugin
   [ 'VendorName\\\\PluginName', pkg.config.php_namespace.replace( /\\/g, '\\\\' ) ], // Rename Composer namespace
   [ 'wordpress-base-plugin', pkg.name ], // Plugin slug
