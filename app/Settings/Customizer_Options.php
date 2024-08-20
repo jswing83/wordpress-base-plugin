@@ -29,7 +29,7 @@ class Customizer_Options extends Plugin {
 
     // Add new section
     $section = $this->customizer->section( $this->prefix( 'my-plugin-section' ), [
-      'title' => __( 'My Plugin Section', self::$textdomain ),
+      'title' => __( 'Test Plugin Section', self::$textdomain ),
       'description' => __( 'Example Customizer Section', self::$textdomain )
     ]);
 

@@ -1,5 +1,5 @@
 {
-  "name": "wordpress-base-plugin",
+  "name": "wordpress-test-plugin",
   "dependencies": {
     "jq.waituntilexists": "*"
   },

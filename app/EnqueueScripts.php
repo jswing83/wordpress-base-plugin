@@ -34,11 +34,11 @@ class EnqueueScripts extends Plugin {
     $this->enqueue_common_scripts();
 
     // Enqueuing custom CSS for child theme (Twentysixteen was used for testing)
-    wp_enqueue_style( 'wordpress-base-plugin', Helpers::get_script_url( 'assets/css/wordpress-base-plugin.css' ), null, Helpers::get_script_version( 'assets/css/wordpress-base-plugin.css' ) );
+    wp_enqueue_style( 'wordpress-test-plugin', Helpers::get_script_url( 'assets/css/wordpress-test-plugin.css' ), null, Helpers::get_script_version( 'assets/css/wordpress-test-plugin.css' ) );
 
     // Enqueue frontend JavaScript
-    wp_enqueue_script( 'wordpress-base-plugin', Helpers::get_script_url( 'assets/js/wordpress-base-plugin.js' ), array( 'jquery', 'jquery-waituntilexists' ), Helpers::get_script_version( 'assets/js/wordpress-base-plugin.js' ), true );
-    wp_localize_script( 'wordpress-base-plugin', $this->prefix( 'ajax_filter_params' ), array( 'ajax_url' => admin_url( 'admin-ajax.php' ) ) );
+    wp_enqueue_script( 'wordpress-test-plugin', Helpers::get_script_url( 'assets/js/wordpress-test-plugin.js' ), array( 'jquery', 'jquery-waituntilexists' ), Helpers::get_script_version( 'assets/js/wordpress-test-plugin.js' ), true );
+    wp_localize_script( 'wordpress-test-plugin', $this->prefix( 'ajax_filter_params' ), array( 'ajax_url' => admin_url( 'admin-ajax.php' ) ) );
 
   }
 
@@ -52,11 +52,11 @@ class EnqueueScripts extends Plugin {
     $this->enqueue_common_scripts();
 
     // Enqueuing custom CSS for child theme (Twentysixteen was used for testing)
-    wp_enqueue_style( 'wordpress-base-plugin', Helpers::get_script_url( 'assets/css/wordpress-base-plugin-admin.css' ), null, Helpers::get_script_version( 'assets/css/wordpress-base-plugin-admin.css' ) );
+    wp_enqueue_style( 'wordpress-test-plugin', Helpers::get_script_url( 'assets/css/wordpress-test-plugin-admin.css' ), null, Helpers::get_script_version( 'assets/css/wordpress-test-plugin-admin.css' ) );
 
     // Enqueue WP Admin JavaScript
-    wp_enqueue_script( 'wordpress-base-plugin-admin', Helpers::get_script_url( 'assets/js/wordpress-base-plugin-admin.js' ), array('jquery', 'jquery-waituntilexists'), Helpers::get_script_version( 'assets/js/wordpress-base-plugin-admin.js' ), true );
-    wp_localize_script( 'wordpress-base-plugin-admin', $this->prefix( 'ajax_filter_params' ), array( 'ajax_url' => admin_url( 'admin-ajax.php' ) ) );
+    wp_enqueue_script( 'wordpress-test-plugin-admin', Helpers::get_script_url( 'assets/js/wordpress-test-plugin-admin.js' ), array('jquery', 'jquery-waituntilexists'), Helpers::get_script_version( 'assets/js/wordpress-test-plugin-admin.js' ), true );
+    wp_localize_script( 'wordpress-test-plugin-admin', $this->prefix( 'ajax_filter_params' ), array( 'ajax_url' => admin_url( 'admin-ajax.php' ) ) );
 
   }
 

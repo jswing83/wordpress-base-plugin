@@ -1,5 +1,5 @@
 {
-  "name": "jswing83/wordpress-base-plugin",
+  "name": "jswing83/wordpress-test-plugin",
   "type": "wordpress-plugin",
   "description": "A bloilerplate for WordPress plugins",
   "keywords": ["wordpress", "plugin", "boilerplate", "carbonfields"],

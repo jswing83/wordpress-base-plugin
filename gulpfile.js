@@ -62,15 +62,15 @@ var jsTasks = [
 
 /* Define strings to replace using 'gulp rename', defined in the config section of package.json */
 var renameStrings = [
-  [ 'jswing83\/wordpress-base-plugin', pkg.config.username + '/' + pkg.name ], // Git/Composer identifier
-  [ 'VendorName\\PluginName', pkg.config.php_namespace ], // PHP namespace for your plugin
-  [ 'VendorName\\\\PluginName', pkg.config.php_namespace.replace( /\\/g, '\\\\' ) ], // Rename Composer namespace
-  [ 'wordpress-base-plugin', pkg.name ], // Plugin slug
-  [ 'wordpress_base_plugin', pkg.name.replace( /-/g, '_' ) ], // Plugin underscored slug
-  [ 'WPBP', pkg.config.prefix.toUpperCase() ], // Unique JavaScript object for your plugin
-  [ 'wpbp', pkg.config.prefix ], // Replace remaining plugin prefixes
-  [ 'WordPress Base Plugin', pkg.config.plugin_name ], // Replace plugin long name
-  [ 'My Plugin', pkg.config.plugin_short_name ] // Replace plugin short name
+  [ 'jswing83\/wp-test-plugin', pkg.config.username + '/' + pkg.name ], // Git/Composer identifier
+  [ 'JasonSwing\\TestPlugin', pkg.config.php_namespace ], // PHP namespace for your plugin
+  [ 'JasonSwing\\\\TestPlugin', pkg.config.php_namespace.replace( /\\/g, '\\\\' ) ], // Rename Composer namespace
+  [ 'wp-test-plugin', pkg.name ], // Plugin slug
+  [ 'wp_test_plugin', pkg.name.replace( /-/g, '_' ) ], // Plugin underscored slug
+  [ 'WTP', pkg.config.prefix.toUpperCase() ], // Unique JavaScript object for your plugin
+  [ 'wtp', pkg.config.prefix ], // Replace remaining plugin prefixes
+  [ 'WP Test Plugin', pkg.config.plugin_name ], // Replace plugin long name
+  [ 'Test Plugin', pkg.config.plugin_short_name ] // Replace plugin short name
 ];
 
 /**

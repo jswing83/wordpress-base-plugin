@@ -2,7 +2,7 @@
   "prefix": "wpbp",
   "short_name": "Jason Plugin",
   "object_cache": {
-    "group": "wordpress_base_plugin_cache",
+    "group": "wordpress_test_plugin_cache",
     "expire": 86400
   },
   "dependencies": {
