@@ -116,7 +116,7 @@ var filter       = require('gulp-filter'); // Enables you to work on a subset of
 var sourcemaps   = require('gulp-sourcemaps'); // Maps code in a compressed file (E.g. style.css) back to it’s original position in a source file (E.g. structure.scss, which was later combined with other css files to generate style.css)
 var notify       = require('gulp-notify'); // Displays notification message
 var batchRename  = require('gulp-simple-rename'); // Rename files with wildcard
-var vinylPaths   = require('vinyl-paths'); // Return each path in a stream
+const vinylPaths = import('vinyl-paths'); // Return each path in a stream
 var del          = require('del'); // Delete files that are renamed
 var plumber      = require( 'gulp-plumber' ); // Prevent pipe breaking caused by errors from gulp plugins.
 
