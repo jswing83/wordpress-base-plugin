@@ -99,7 +99,7 @@ var gulp         = require('gulp');
 var pkg          = require('./package.json');
 
 // CSS-related plugins
-var sass         = require('gulp-sass'); // Gulp pluign for Sass compilation.
+var sass         = require('gulp-sass')(require('sass')); // Gulp pluign for Sass compilation.
 var minifycss    = require('gulp-uglifycss'); // Minifies CSS files.
 var autoprefixer = require('gulp-autoprefixer'); // Autoprefixing magic.
 var mmq          = require('gulp-merge-media-queries'); // Combine matching media queries into one media query definition.

@@ -27,7 +27,7 @@
     "gulp-notify": "^3.1.0",
     "gulp-plumber": "^1.2",
     "gulp-rename": "^1.4.0",
-    "gulp-sass": "^3.2.1",
+    "gulp-sass": "^5.1.0",
     "gulp-simple-rename": "^0.1.3",
     "gulp-sourcemaps": "^1.5.2",
     "gulp-uglify": "^3.0.1",
@@ -39,5 +39,7 @@
     "type": "git",
     "url": "git://github.com/jswing83/wordpress-base-plugin.git"
   },
-  "dependencies": {}
+  "dependencies": {
+    "sass": "^1.77.8"
+  }
 }
