@@ -3,6 +3,7 @@
   "author": "Jason Swing",
   "license": "GPL-2.0-or-later",
   "private": true,
+  "type": "module",
   "config": {
     "plugin_name": "WordPress Test Plugin",
     "plugin_short_name": "Test Plugin",
@@ -40,6 +41,7 @@
     "url": "git://github.com/jswing83/wordpress-test-plugin.git"
   },
   "dependencies": {
+    "prettier-eslint": "^16.3.0",
     "sass": "^1.77.8"
   }
 }

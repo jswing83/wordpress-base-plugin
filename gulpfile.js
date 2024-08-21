@@ -1,3 +1,30 @@
+import pkg from './package.json' assert { type: 'json' };
+import vinylPaths from 'vinyl-paths';
+import gulp from 'gulp';
+import minifycss from 'gulp-uglifycss'; // Minifies CSS files.
+import * as compiler from 'sass'; // Gulp pluign for Sass compilation.
+import gsass from 'gulp-sass'; // Gulp pluign for Sass compilation.
+import autoprefixer from 'gulp-autoprefixer'; // Autoprefixing magic.
+import mmq from 'gulp-merge-media-queries'; // Combine matching media queries into one media query definition.
+
+// JavaScript-related plugins.
+import concat from 'gulp-concat'; // Concatenates JS files
+import uglify from 'gulp-uglify'; // Minifies JS files
+
+// Utility related plugins.
+import rename from 'gulp-rename'; // Renames files (ex: style.css -> style.min.css)
+import replace from 'gulp-batch-replace'; // Replace strings inside files
+import lineec from 'gulp-line-ending-corrector'; // Consistent Line Endings for non UNIX systems. Gulp Plugin for Line Ending Corrector (A utility that makes sure your files have consistent line endings)
+import filter from 'gulp-filter'; // Enables you to work on a subset of the original files by filtering them using globbing.
+import sourcemaps from 'gulp-sourcemaps'; // Maps code in a compressed file (E.g. style.css) back to it’s original position in a source file (E.g. structure.scss, which was later combined with other css files to generate style.css)
+import notify from 'gulp-notify'; // Displays notification message
+import batchRename from 'gulp-simple-rename'; // Rename files with wildcard
+import del from 'del'; // Delete files that are renamed
+import plumber from  'gulp-plumber'; // Prevent pipe breaking caused by errors from gulp plugins.
+
+// initialize
+const sass = gsass(compiler);
+
 /**
  * Gulpfile heavily adapted from {@link https://github.com/ahmadawais/WPGulp WPGulp}
  * Implements:
@@ -11,7 +38,7 @@
  * @since 0.3.0
  */
 
-var pkg = require('./package.json');
+//var pkg = require('./package.json');
 
 /**
  * Configuration
@@ -91,34 +118,6 @@ const AUTOPREFIXER_BROWSERS = [
   'android >= 4',
   'bb >= 10'
 ];
-
-/**
- * Load gulp plugins and pass them semantic names.
- */
-var gulp         = require('gulp');
-var pkg          = require('./package.json');
-
-// CSS-related plugins
-var sass         = require('gulp-sass')(require('sass')); // Gulp pluign for Sass compilation.
-var minifycss    = require('gulp-uglifycss'); // Minifies CSS files.
-var autoprefixer = require('gulp-autoprefixer'); // Autoprefixing magic.
-var mmq          = require('gulp-merge-media-queries'); // Combine matching media queries into one media query definition.
-
-// JavaScript-related plugins.
-var concat       = require('gulp-concat'); // Concatenates JS files
-var uglify       = require('gulp-uglify'); // Minifies JS files
-
-// Utility related plugins.
-var rename       = require('gulp-rename'); // Renames files (ex: style.css -> style.min.css)
-var replace      = require('gulp-batch-replace'); // Replace strings inside files
-var lineec       = require('gulp-line-ending-corrector'); // Consistent Line Endings for non UNIX systems. Gulp Plugin for Line Ending Corrector (A utility that makes sure your files have consistent line endings)
-var filter       = require('gulp-filter'); // Enables you to work on a subset of the original files by filtering them using globbing.
-var sourcemaps   = require('gulp-sourcemaps'); // Maps code in a compressed file (E.g. style.css) back to it’s original position in a source file (E.g. structure.scss, which was later combined with other css files to generate style.css)
-var notify       = require('gulp-notify'); // Displays notification message
-var batchRename  = require('gulp-simple-rename'); // Rename files with wildcard
-const vinylPaths = import('vinyl-paths'); // Return each path in a stream
-var del          = require('del'); // Delete files that are renamed
-var plumber      = require( 'gulp-plumber' ); // Prevent pipe breaking caused by errors from gulp plugins.
 
 /**
  * Custom Error Handler.
@@ -268,7 +267,7 @@ gulp.task( 'rename', () => {
   return gulp.src( [ './**/*.php', './*.json', './**/*.js', './**/*.scss', './*.txt', './*.md', '!./node_modules/**', '!./vendor/**', '!./.git/**', '!./languages/**', '!./*lock*', '!./gulpfile.js' ] )
     .pipe( plumber( errorHandler ) )
     .pipe( replace( renameStrings ) )
-    .pipe( vinylPaths( del ) )
+    .pipe( vinylPaths ( del ) )
     .pipe( batchRename( function (path) {
       return path.replace( /wordpress-base-plugin/, pkg.name );
     } ) )
@@ -283,7 +282,7 @@ gulp.task( 'rename', () => {
 function object_property_to_array( obj, id, arr ) {
   var result = [];
   obj.forEach( function( item ) {
-    for( key in item ) {
+    for( let key in item ) {
       if(item.hasOwnProperty(key)) {
         if( key == id ) result.push( item[id] );
       }
