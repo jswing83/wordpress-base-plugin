@@ -1,8 +1,8 @@
 {
-  "name": "jswing83/wordpress-test-plugin",
+  "name": "jswing83/wp-test-plugin",
   "type": "wordpress-plugin",
-  "description": "A bloilerplate for WordPress plugins",
-  "keywords": ["wordpress", "plugin", "boilerplate", "carbonfields"],
+  "description": "Learning WP plugins",
+  "keywords": ["wordpress", "plugin", "carbonfields"],
   "license": "GPL-2.0-or-later",
   "authors": [
     {
