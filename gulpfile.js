@@ -230,22 +230,11 @@ jsTasks.forEach( function( task ) {
     done();
   });
 
-
 });
 
 /**
  * Watches for file changes and runs specified tasks.
  */
-//gulp.task( 'default', object_property_to_array( tasks_js, 'id', tasks_css ), function () {
-
-//  gulp.watch( styleSourcePath + '**/*.scss', tasks_css );
-
-//  tasks_js.forEach( function( task ) {
-//    gulp.watch( task.watch, [ task.id ] );
-//  });
-
-//});
-
 gulp.task(
 	'default',
 	 gulp.series( gulp.parallel( object_property_to_array( tasks_js, 'id', tasks_css ) ), () => {

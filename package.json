@@ -8,8 +8,8 @@
     "plugin_name": "WordPress Test Plugin",
     "plugin_short_name": "Test Plugin",
     "username": "jswing83",
-    "php_namespace": "VendorName\\PluginName",
-    "prefix": "wpbp"
+    "php_namespace": "JasonSwing\\TestPlugin",
+    "prefix": "wtp"
   },
   "scripts": {
     "translate": "wp-pot --src 'app/**/*.php' --dest-file ./languages/$npm_package_name.pot --package $npm_package_name",
