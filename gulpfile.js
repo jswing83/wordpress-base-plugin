@@ -237,15 +237,17 @@ jsTasks.forEach( function( task ) {
  */
 gulp.task(
 	'default',
-	 gulp.series( gulp.parallel( object_property_to_array( tasks_js, 'id', tasks_css ) ), () => {
-
-    gulp.watch( styleSourcePath + '**/*.scss', gulp.parallel( tasks_css ) );
-
-    tasks_js.forEach( function( task ) {
-      gulp.watch( task.watch, gulp.series( task.id ) );
-    });
-
-	})
+  gulp.series(
+    gulp.parallel(
+      object_property_to_array( tasks_js, 'id', tasks_css )
+    ),
+    () => {
+      gulp.watch( styleSourcePath + '**/*.scss', gulp.parallel( tasks_css ) );
+      tasks_js.forEach( function( task ) {
+        gulp.watch( task.watch, gulp.series( task.id ) );
+      });
+    }
+  )
 );
 
 /**
