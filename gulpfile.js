@@ -19,7 +19,7 @@ import filter from 'gulp-filter'; // Enables you to work on a subset of the orig
 import sourcemaps from 'gulp-sourcemaps'; // Maps code in a compressed file (E.g. style.css) back to it’s original position in a source file (E.g. structure.scss, which was later combined with other css files to generate style.css)
 import notify from 'gulp-notify'; // Displays notification message
 import batchRename from 'gulp-simple-rename'; // Rename files with wildcard
-import del from 'del'; // Delete files that are renamed
+import { deleteSync } from 'del'; // Delete files that are renamed
 import plumber from  'gulp-plumber'; // Prevent pipe breaking caused by errors from gulp plugins.
 
 // initialize
@@ -267,7 +267,7 @@ gulp.task( 'rename', () => {
   return gulp.src( [ './**/*.php', './*.json', './**/*.js', './**/*.scss', './*.txt', './*.md', '!./node_modules/**', '!./vendor/**', '!./.git/**', '!./languages/**', '!./*lock*', '!./gulpfile.js' ] )
     .pipe( plumber( errorHandler ) )
     .pipe( replace( renameStrings ) )
-    .pipe( vinylPaths ( del ) )
+    .pipe( vinylPaths ( deleteSync ) )
     .pipe( batchRename( function (path) {
       return path.replace( /wordpress-base-plugin/, pkg.name );
     } ) )
